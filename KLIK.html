@@ -14,6 +14,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow: hidden; /* Prevent zooming on iOS */
         }
 
         .container {
@@ -46,16 +47,8 @@
 
         .video-container video {
             width: 100%;
+            max-width: 100%; /* Ensure video doesn't exceed container width */
             border-radius: 10px;
-        }
-
-        .photo-container img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        .footer {
-            text-align: center;
         }
 
         @media only screen and (max-width: 600px) {
