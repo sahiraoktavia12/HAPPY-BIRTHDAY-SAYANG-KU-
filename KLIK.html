@@ -13,8 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            overflow: hidden; /* Prevent zooming on iOS */
+            overflow-y: auto; /* Enable vertical scrolling */
         }
 
         .container {
@@ -47,7 +46,6 @@
 
         .video-container video {
             width: 100%;
-            max-width: 100%; /* Ensure video doesn't exceed container width */
             border-radius: 10px;
         }
 
